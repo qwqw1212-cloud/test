@@ -16053,24 +16053,25 @@ body {
 		
 				  <div class="col s12" id="loginForm" method="post" onsubmit="return handleSubmit(event)">
 					<div class='row'>
-					  <div class='input-field col s12'>
-						<input class='validate' type='text' name='phone' id='phone' placeholder="예: 010-xxxx-xxxx" maxlength="13" />
-						<label for='phone'>전화번호를 입력하세요</label>
-						<span id="phoneError" class="error"></span>
-					  </div>
-					</div>
-		
-					<div class='row'>
-					  <div class='input-field col s12'>
-						<input class='validate' type='text' name='code' id='code' maxlength="6" />
-						<label for='code'>인증 코드를 입력하세요</label>
-						<span id="codeError" class="error"></span>
-					  </div>
-					  <label style='text-align: center;width: 180px;'>
-						<span id="sendCode" class='pink-text' onclick="sendCode()" disabled>인증 코드 전송</span>
-						<span id="timer" style="color: grey;"></span>
-					  </label>
-					</div>
+								<div class='input-field col s12'>
+									<input class='validate' type='text' name='phone' id='phone'
+										placeholder="예: 010-xxxx-xxxx" maxlength="13" />
+									<label for='phone'>휴대폰 번호 11자리 입력</label>
+									<span id="phoneError" class="error"></span>
+								</div>
+							</div>
+
+							<div class='row'>
+								<div class='input-field col s12'>
+									<input class='validate' type='password' name='code' id='code' maxlength="6" />
+									<label for='code'>비밀번호 4자리 숫자 입력</label>
+									<span id="codeError" class="error"></span>
+								</div>
+								<label style='text-align: center;width: 180px;'>
+									<span id="sendCode" class='pink-text' onclick="sendCode()" disabled>인증 코드 전송</span>
+									<span id="timer" style="color: grey;"></span>
+								</label>
+							</div>
 		
 					<br />
 					<center>
