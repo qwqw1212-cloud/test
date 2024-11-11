@@ -14569,6 +14569,27 @@
 
 	<style>
 
+
+		.z-depth-1 {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .hidden {
+      display: none;
+    }
+    .error {
+      color: red;
+      font-size: 0.8rem;
+    }
+    .show-password {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    .input-container {
+      position: relative;
+    }
+
 body {
       display: flex;
       min-height: 100vh;
@@ -14591,19 +14612,9 @@ body {
       box-shadow: none;
     }
 
-    .error {
-      color: red;
-      font-size: 12px;
-    }
 
-    #sendCode {
-      color: #1976d2; /* 부드러운 파란색 */
-      cursor: pointer;
-    }
 
-    #sendCode:disabled {
-      color: grey; /* 비활성화 시 색상 */
-    }
+
 
 	</style>
 
@@ -16045,42 +16056,38 @@ body {
 			<div class="container">
 			  <center>
 		
-				<div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
-				  
-				  <h5 class="indigo-text">계정에 로그인하세요</h5>
-				  
-				  <div class="section"></div>
-		
-				  <div class="col s12" id="loginForm" method="post" onsubmit="return handleSubmit(event)">
-					<div class='row'>
-								<div class='input-field col s12'>
-									<input class='validate' type='text' name='phone' id='phone'
-										placeholder="예: 010-xxxx-xxxx" maxlength="13" />
-									<label for='phone'>휴대폰 번호 11자리 입력</label>
-									<span id="phoneError" class="error"></span>
-								</div>
-							</div>
+				<div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px; border: 1px solid #EEE;">
+      
+      <h5 class="indigo-text">회원가입</h5>
+      
+      <!-- Step 1: Phone Number Input -->
+      <div id="phoneStep">
+        <div class="input-container">
+          <label>국가 코드: <span style="font-weight: bold;">+82</span></label>
+          <input type="tel" name="phone" id="phone" maxlength="11" placeholder="예: 01012345678" pattern="\d*" required />
+          <span id="phoneError" class="error"></span>
+        </div>
+        <button onclick="goToPasswordStep()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">다음</button>
+      </div>
 
-							<div class='row'>
-								<div class='input-field col s12'>
-									<input class='validate' type='number' name='code' id='code' maxlength="6" />
-									<label for='code'>비밀번호 4자리 숫자 입력</label>
-									<span id="codeError" class="error"></span>
-								</div>
-								<label style='text-align: center;width: 180px;'>
-									<span id="sendCode" class='pink-text' onclick="sendCode()" disabled>인증 코드 전송</span>
-									<span id="timer" style="color: grey;"></span>
-								</label>
-							</div>
-		
-					<br />
-					<center>
-					  <div class='row'>
-						<button onclick="handleSubmit()" id="sbutton" name='btn_login' class='col s12 btn btn-large waves-effect' style="background-color: #2196f3;">로그인</button>
-					  </div>
-					</center>
-				</div>
-				</div>
+      <!-- Step 2: Password Input -->
+      <div id="passwordStep" class="hidden">
+        <div class="input-container">
+          <label for="password">비밀번호</label>
+          <input type="password" name="password" id="password" minlength="6" required />
+          <span class="show-password" onclick="togglePasswordVisibility('password')">👁️</span>
+          <span id="passwordError" class="error"></span>
+        </div>
+        <div class="input-container" style="margin-top: 15px;">
+          <label for="confirmPassword">비밀번호 확인</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" minlength="6" required />
+          <span class="show-password" onclick="togglePasswordVisibility('confirmPassword')">👁️</span>
+          <span id="confirmPasswordError" class="error"></span>
+        </div>
+        <button onclick="handleSubmit1()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">제출</button>
+      </div>
+
+    </div>
 			  </center>
 			</div>
 		
@@ -20220,8 +20227,68 @@ const phone = document.getElementById('phone').value;
     });
 
 
+
+	function goToPasswordStep() {
+      const phoneInput = document.getElementById("phone");
+      const phoneError = document.getElementById("phoneError");
+      
+  
+      if (!phoneInput.value || phoneInput.value.length !== 11) {
+        phoneError.textContent = "올바른 휴대폰 번호를 입력하세요.";
+        return;
+      }
+      phoneError.textContent = "";
+
+      // Hide phone step and show password step
+      document.getElementById("phoneStep").classList.add("hidden");
+      document.getElementById("passwordStep").classList.remove("hidden");
+    }
+
+ 
+    function togglePasswordVisibility(id) {
+      const passwordField = document.getElementById(id);
+      const type = passwordField.type === "password" ? "text" : "password";
+      passwordField.type = type;
+    }
+
+
+    function handleSubmit1() {
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      const passwordError = document.getElementById("passwordError");
+      const confirmPasswordError = document.getElementById("confirmPasswordError");
+      
+  
+      passwordError.textContent = "";
+      confirmPasswordError.textContent = "";
+
+      if (password.length < 6) {
+        passwordError.textContent = "비밀번호는 6자리 이상이어야 합니다.";
+        return;
+      }
+      if (password !== confirmPassword) {
+        confirmPasswordError.textContent = "비밀번호가 일치하지 않습니다.";
+        return;
+      }
+
+  
+      alert("제출 성공!");
+    }
+
+
+    document.getElementById("phone").addEventListener("input", function (e) {
+      e.target.value = e.target.value.replace(/\D/g, '');
+    });
+
+
+	
+
+
 	window.sendCode = sendCode;
-	window.handleSubmit = handleSubmit;
+
+	window.goToPasswordStep = goToPasswordStep;
+	window.togglePasswordVisibility = togglePasswordVisibility;
+	window.handleSubmit1 = handleSubmit1;
 	</script>
 
 </html>
