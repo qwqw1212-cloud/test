@@ -16072,18 +16072,18 @@ body {
 
       <!-- Step 2: Password Input -->
       <div id="passwordStep" class="hidden">
-        <div class="input-container">
-          <label for="password">비밀번호</label>
-          <input type="password" name="password" id="password" minlength="6" required />
-          <span class="show-password" onclick="togglePasswordVisibility('password')">👁️</span>
-          <span id="passwordError" class="error"></span>
-        </div>
-        <div class="input-container" style="margin-top: 15px;">
-          <label for="confirmPassword">비밀번호 확인</label>
-          <input type="password" name="confirmPassword" id="confirmPassword" minlength="6" required />
-          <span class="show-password" onclick="togglePasswordVisibility('confirmPassword')">👁️</span>
-          <span id="confirmPasswordError" class="error"></span>
-        </div>
+       <div class="input-container">
+						  <label for="password">비밀번호</label>
+						  <input type="number" name="password" id="password" minlength="4" maxlength="4" required />
+						  <span class="show-password" onclick="togglePasswordVisibility('password')">👁️</span>
+						  <span id="passwordError" class="error"></span>
+						</div>
+						<div class="input-container" style="margin-top: 15px;">
+						  <label for="confirmPassword">비밀번호 확인</label>
+						  <input type="number" name="confirmPassword" id="confirmPassword" minlength="4" maxlength="4" required />
+						  <span class="show-password" onclick="togglePasswordVisibility('confirmPassword')">👁️</span>
+						  <span id="confirmPasswordError" class="error"></span>
+						</div>
         <button onclick="handleSubmit1()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">제출</button>
       </div>
 
@@ -20262,8 +20262,8 @@ const phone = document.getElementById('phone').value;
       passwordError.textContent = "";
       confirmPasswordError.textContent = "";
 
-      if (password.length < 6) {
-        passwordError.textContent = "비밀번호는 6자리 이상이어야 합니다.";
+      if (password.length != 4 ) {
+        passwordError.textContent = "비밀번호는 4자리 이상이어야 합니다.";
         return;
       }
       if (password !== confirmPassword) {
