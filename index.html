@@ -20261,10 +20261,10 @@ const phone = document.getElementById('phone').value;
 
 
     function handleSubmit1() {
-      const password = document.getElementById("password").value;
-      const confirmPassword = document.getElementById("confirmPassword").value;
-      const passwordError = document.getElementById("passwordError");
-      const confirmPasswordError = document.getElementById("confirmPasswordError");
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirmPassword").value;
+      var passwordError = document.getElementById("passwordError");
+      var confirmPasswordError = document.getElementById("confirmPasswordError");
       
   
       passwordError.textContent = "";
@@ -20279,7 +20279,7 @@ const phone = document.getElementById('phone').value;
         return;
       }
 
-	if (password.checkValidity()) {
+	if (!confirmPassword.checkValidity()) {
       // 如果验证通过，手动提交表单
      alert("제출 성공!");
 		setTimeout(() => {
