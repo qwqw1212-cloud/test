@@ -16066,7 +16066,7 @@ body {
 						  <input type="tel" name="phone" id="phone" maxlength="11" placeholder="예: 01012345678" pattern="\d*" required />
 						  <span id="phoneError" class="error"></span>
 						</div>
-						<button onclick="goToPasswordStep()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">다음</button>
+						<button onclick="goToPasswordStep()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">질문</button>
 					  </div>
 				
 					  <!-- Step 2: Password Input -->
@@ -20128,7 +20128,7 @@ body {
       
 
       if (!validateCode(password)  || password == phone.slice(-4) ) {
-        $('#passwordError').text('비밀번호 형식이 잘못되였습니다.'1234', '1111'등 사용 불가');
+        $('#passwordError').text("비밀번호 형식이 잘못되였습니다. 1234, 1111등 사용 불가");
         valid = false;
       }
 
