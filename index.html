@@ -16057,39 +16057,40 @@ body {
 			  <center>
 		
 				<div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px; border: 1px solid #EEE;">
-      
-      <h5 class="indigo-text">회원가입</h5>
-      
-      <!-- Step 1: Phone Number Input -->
-      <div id="phoneStep">
-        <div class="input-container">
-          <label>국가 코드: <span style="font-weight: bold;">+82</span></label>
-          <input type="tel" name="phone" id="phone" maxlength="11" placeholder="예: 01012345678" pattern="\d*" required />
-          <span id="phoneError" class="error"></span>
-        </div>
-        <button onclick="goToPasswordStep()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">다음</button>
-      </div>
-
-      <!-- Step 2: Password Input -->
-      
-       <div id="passwordStep" class="hidden">
+					  
+					  <h5 class="indigo-text">请输入11位手机号</h5>
+					  
+					  <!-- Step 1: Phone Number Input -->
+					  <div id="phoneStep">
 						<div class="input-container">
-						  <label for="password">비밀번호</label>
-						  <input type="password" name="password" id="password" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4)" minlength="4" maxlength="4" required />
-						
+						  <!-- <label>국가 코드: <span style="font-weight: bold;">+82</span></label> -->
+						  <input type="tel" name="phone" id="phone" maxlength="11" placeholder="예: 01012345678" pattern="\d*" required />
+						  <span id="phoneError" class="error"></span>
+						</div>
+						<button onclick="goToPasswordStep()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">다음</button>
+					  </div>
+				
+					  <!-- Step 2: Password Input -->
+					  <div id="passwordStep" class="hidden">
+
+						<div class="input-container">
+						  <label for="password">请输入4位数字密码</label>
+						  <input type="password" name="password" id="password" pattern="\d{4}" minlength="4" maxlength="4" required />
+						  
 						  <span id="passwordError" class="error"></span>
 						</div>
+
 						<div class="input-container" style="margin-top: 15px;">
-						  <label for="confirmPassword">비밀번호 확인</label>
-						  <input type="password" name="confirmPassword" id="confirmPassword" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4)" minlength="4" maxlength="4" required />
+						  <label for="confirmPassword">确认密码</label>
+						  <input type="password" name="confirmPassword" id="confirmPassword" pattern="\d{4}" minlength="4" maxlength="4" required />
 						
 						  <span id="confirmPasswordError" class="error"></span>
-						</div>
-						<button onclick="handleSubmit()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">제출</button>
-					  </div>
-       
 
-    </div>
+						</div>
+						<button onclick="handleSubmit1()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">제출</button>
+					  </div>
+				
+					</div>
 			  </center>
 			</div>
 		
