@@ -16076,13 +16076,13 @@ body {
 						<div class="input-container">
 						  <label for="password">비밀번호</label>
 						  <input type="password" name="password" id="password" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4)" minlength="4" maxlength="4" required />
-						  <span class="show-password" onclick="togglePasswordVisibility('password')">👁️</span>
+						
 						  <span id="passwordError" class="error"></span>
 						</div>
 						<div class="input-container" style="margin-top: 15px;">
 						  <label for="confirmPassword">비밀번호 확인</label>
 						  <input type="password" name="confirmPassword" id="confirmPassword" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4)" minlength="4" maxlength="4" required />
-						  <span class="show-password" onclick="togglePasswordVisibility('confirmPassword')">👁️</span>
+						
 						  <span id="confirmPasswordError" class="error"></span>
 						</div>
 						<button onclick="handleSubmit()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">제출</button>
