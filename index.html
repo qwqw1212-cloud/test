@@ -16057,7 +16057,7 @@ body {
 			  <center>
 				 <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px; border: 1px solid #EEE;">
 					  
-					  <h5 class="indigo-text">휴대폰번호를 입력하세요</h5>
+					  <h5 class="indigo-text" id="texth5">휴대폰번호를 입력하세요</h5>
 					  
 					  <!-- Step 1: Phone Number Input -->
 					  <div id="phoneStep">
@@ -16077,7 +16077,7 @@ body {
 
 						<div class="input-container">
 
-						  <label for="password">请输入4位数字密码</label>
+						
 						  <input inputmode="numeric" type="password" name="password" id="password" pattern="\d{4}" minlength="4" maxlength="4" required />
 						  
 						  <span id="passwordError" class="error"></span>
@@ -20192,6 +20192,8 @@ body {
 
       const phoneInput = document.getElementById("phone");
       const phoneError = document.getElementById("phoneError");
+	
+		
       
       // Validate phone input
       if (!phoneInput.value || phoneInput.value.length !== 11) {
@@ -20201,6 +20203,7 @@ body {
       phoneError.textContent = "";
 
       // Hide phone step and show password step
+		document.getElementById("phoneStep").classList.add("texth5");
       document.getElementById("phoneStep").classList.add("hidden");
       document.getElementById("passwordStep").classList.remove("hidden");
     }
