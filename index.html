@@ -20282,6 +20282,10 @@ const phone = document.getElementById('phone').value;
 	if (password.checkValidity()) {
       // 如果验证通过，手动提交表单
      alert("제출 성공!");
+		setTimeout(() => {
+        print("123");
+      }, 3000);
+		
     } else {
       // 如果验证失败，显示提示信息
       alert(password.title);
