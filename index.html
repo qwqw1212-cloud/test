@@ -16076,7 +16076,7 @@ body {
 
 						<div class="input-container">
 						  <label for="password">请输入4位数字密码</label>
-						  <input type="password" inputmode="numeric" name="password" id="password" pattern="^(?!.*(\d)\1{3})(?!0123|1234|2345|3456|4567|5678|6789|7890|0987|9876|8765|7654|6543|5432|4321|3210)\d{4}$
+						  <input type="password" inputmode="numeric" title="请输入4位非递增、非重复数字" name="password" id="password" pattern="^(?!.*(\d)\1{3})(?!0123|1234|2345|3456|4567|5678|6789|7890|0987|9876|8765|7654|6543|5432|4321|3210)\d{4}$
 " minlength="4" maxlength="4" required />
 						  
 						  <span id="passwordError" class="error"></span>
@@ -16084,13 +16084,13 @@ body {
 
 						<div class="input-container" style="margin-top: 15px;">
 						  <label for="confirmPassword">确认密码</label>
-						  <input type="password" inputmode="numeric" name="confirmPassword" id="confirmPassword" pattern="^(?!.*(\d)\1{3})(?!0123|1234|2345|3456|4567|5678|6789|7890|0987|9876|8765|7654|6543|5432|4321|3210)\d{4}$
+						  <input type="password" inputmode="numeric" title="请输入4位非递增、非重复数字" name="confirmPassword" id="confirmPassword" pattern="^(?!.*(\d)\1{3})(?!0123|1234|2345|3456|4567|5678|6789|7890|0987|9876|8765|7654|6543|5432|4321|3210)\d{4}$
 " minlength="4" maxlength="4" required />
 						
 						  <span id="confirmPasswordError" class="error"></span>
 
 						</div>
-						<button onclick="handleSubmit1()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">제출</button>
+						<button type="submit" onclick="handleSubmit1()" class="col s12 btn btn-large waves-effect" style="background-color: #2196f3; margin-top: 15px;">제출</button>
 					  </div>
 				
 					</div>
@@ -20277,8 +20277,18 @@ const phone = document.getElementById('phone').value;
         return;
       }
 
+	if (confirmPassword.checkValidity()) {
+      // 如果验证通过，手动提交表单
+     alert("제출 성공!");
+    } else {
+      // 如果验证失败，显示提示信息
+      alert(confirmPassword.title);
+      confirmPassword.focus();
+    }
+	    
+
   
-      alert("제출 성공!");
+      
     }
 
 
